@@ -55,6 +55,7 @@
         .then(() => console.log("Service worker registered successfully."))
         .catch(error => console.log("Service Worker registration failed:", error));
     }
+  // this is an 'immediately invoke function expression' (IIFE); the empty set of parentheses following the expression let js know to execute the function as soon as it is defined; because of that, this function is not part of the global space. 
   })();
 </script>
 </html>

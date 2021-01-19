@@ -4,7 +4,7 @@
     "description": "An app that helps with budget tracking.",
     "background_color": "#dddddd",
     "theme_color": "#65c7bc",
-    "start_url": "https://keep.com",
+    "start_url": "http://localhost:3001/",
     "display": "standalone",
     "icons": [
         {
