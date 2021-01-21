@@ -4,7 +4,6 @@ const DATA_CACHE_NAME = "Keep-data-"+VERSION;
 
 // defines files to be added to cache
 const FILES_TO_CACHE = [
-    "/",
     "./index.html",
     "./manifest.json",
     "./css/styles.css",
@@ -19,6 +18,19 @@ const FILES_TO_CACHE = [
     "./js/idb.js",
     "./js/index.js"
 ];
+
+// adds files to precache; 'self' instantiates a listener on the service worker, as service workers run even before a 'window' object has been created.
+self.addEventListener('install', function (e) {
+    // tells browser to wait until installation is complete
+    e.waitUntil(
+        // finds specific cache by name
+        caches.open(CACHE_NAME).then(cache => {
+            console.log('installing cache : ' + CACHE_NAME)
+            // add all files to cache
+            return cache.addAll(FILES_TO_CACHE);
+        })
+    );
+});
 
 // listens for fetch event and logs URL of requested resource and defines response
 self.addEventListener('fetch', function (e) {
@@ -58,20 +70,6 @@ self.addEventListener('fetch', function (e) {
     );
 })
 
-// adds files to precache; 'self' instantiates a listener on the service worker, as service workers run even before a 'window' object has been created.
-self.addEventListener('install', function (e) {
-    // tells browser to wait until installation is complete
-    e.waitUntil(
-        // finds specific cache by name
-        caches.open(CACHE_NAME).then(cache => {
-            console.log('installing cache : ' + CACHE_NAME)
-            // add all files to cache
-            return cache.addAll(FILES_TO_CACHE);
-        })
-    );
-    // can be called at any point during service worker's execution; will only have an effect if there's a newly installed service worker (that would otherwise remain in waiting state/hold up activation)
-    self.skipWaiting();
-});
 
 // clears out and tells service worker how to manaage caches
 self.addEventListener('activate', function (e) {
