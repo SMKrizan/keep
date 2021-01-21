@@ -1,6 +1,7 @@
+const APP_PREFIX = "Keep-",
 const VERSION = 'v1';
-const CACHE_NAME = 'Keep-'+VERSION;
-const DATA_CACHE_NAME = "Keep-data-"+VERSION;
+const CACHE_NAME = APP_PREFIX + VERSION;
+const DATA_CACHE_NAME = "Keep-data-" + VERSION;
 
 // defines files to be added to cache
 const FILES_TO_CACHE = [
@@ -76,14 +77,20 @@ self.addEventListener('activate', function (e) {
     e.waitUntil(
         // this method will return a promise with an array of the caches.keys, held by 'keyList'
         caches.keys().then(keyList => {
+            // filters cache containing app prefix and adds to new array
+            let cacheKeepList = keyList.filter(key => {
+                return key.indexOf(APP_PREFIX)
+            });
+            cacheKeepList.push(CACHE_NAME);
+            // returns promise that resolves once all old versions of cache have been deleted
             return Promise.all(
-                keyList.map(key => {
-                    if (key !== CACHE_NAME && key !== DATA_CACHE_NAME) {
-                        console.log('Removing old cache data', key);
-                        return caches.delete(key);
+                keyList.map(function (key, i) {
+                    if (cacheKeepList.indexOf(key) === -1) {
+                        console.log('deleting cache : ' + keyList[i]);
+                        return caches.delete(keyList[i]);
                     }
                 })
-            )
+            );
         })
     );
 });
