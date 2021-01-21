@@ -23,5 +23,5 @@
     "mongoose": "^5.11.12",
     "morgan": "^1.10.0"
   },
-  "homepage": "https://keep-budget-app.herokuapp.com/",
+  "homepage": "https://keep-budget-app.herokuapp.com/"
 }
