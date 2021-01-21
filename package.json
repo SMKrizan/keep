@@ -17,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/SMKrizan/keep"
   },
-  "homepage": "https://keep-budget-app.herokuapp.com/",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
