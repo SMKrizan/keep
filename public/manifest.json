@@ -3,8 +3,8 @@
     "short_name": "Keep",
     "description": "An app that helps with budget tracking.",
     "background_color": "#dddddd",
-    "theme_color": "#65c7bc",
-    "start_url": "http://localhost:3001/",
+    "theme_color": "#dddddd",
+    "start_url": "/",
     "display": "standalone",
     "icons": [
         {

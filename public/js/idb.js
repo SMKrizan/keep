@@ -2,17 +2,17 @@
 let db;
 
 // establishes a connection to IndexDB database and sets version
-const request = indexedDB.open('budget_app', 1);
+const request = indexedDB.open('keep', 1);
 
 // emits if the db version changes
 request.onupgradeneeded = function(event) {
     // saves reference to db
     const db = event.target.result;
-    // creates object store called 'new_data' set to have auto-increment primary key
+    // creates object store called 'new_data' set with auto-increment primary key
     db.createObjectStore('new_data', { autoIncrement: true });
 }
 
-// event handler finalizes connection to db with Object Store
+// event handler - finalizes connection to db with Object Store
 request.onsuccess = function(event) {
     // saves reference to db in global variable
     db = event.target.result;
@@ -38,7 +38,7 @@ function saveRecord(record) {
     // adds record to store with add method
     dataObjectStore.add(record);
 }
-
+    
 function uploadData() {
     // open a transaction on db
     const transaction = db.transaction(['new_data'], 'readwrite');
@@ -53,7 +53,7 @@ function uploadData() {
     getAll.onsuccess = function() {
         // if indexDB holds data, sends to api server
         if (getAll.result.length > 0) {
-            fetch('route', {
+            fetch('/api/transaction/bulk', {
                 method: 'POST',
                 body: JSON.stringify(getAll.result),
                 headers: {
