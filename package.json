@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coding-boot-camp/unit18hw.git"
+    "url": "https://github.com/SMKrizan/keep"
   },
   "author": "Sara Krizan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/coding-boot-camp/unit18hw/issues"
+    "url": "https://github.com/SMKrizan/keep"
   },
-  "homepage": "https://github.com/coding-boot-camp/unit18hw#readme",
+  "homepage": "https://keep-budget-app.herokuapp.com/",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
