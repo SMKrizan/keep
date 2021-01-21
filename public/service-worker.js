@@ -88,6 +88,4 @@ self.addEventListener('activate', function (e) {
             )
         })
     );
-    // allows active service worker to set itself as controller for all clients within its scope resulting in service worker controlling pages that loaded regularly over the network.
-    self.clients.claim();
 });
