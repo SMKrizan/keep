@@ -1,32 +1,57 @@
 # "keep" budget tracker
 
-User Story
-AS AN avid traveler
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling 
-
-Acceptance Criteria
-GIVEN a budget tracker without an internet connection
-WHEN the user inputs an expense or deposit
-THEN they will receive a notification that they have added an expense or deposit
-WHEN the user reestablishes an internet connection
-THEN the deposits or expenses added while they were offline are added to their transaction history and their totals are updated
+# Constellation: a Social Network API
 
 
-The Food Festival application that you created in this module's lessons did not include an Express.js server, so you used the webpack-dev-server npm module to test the service worker with an HTTPS-enabled server.
+## Description
+This application is the API for a social network web application. Users can add and remove friends, add and remove thoughts and add and remove reactions to others' posts.
 
-For this Challenge, however, you aren't using webpack, but you do have an Express.js server provided to you in the starter code. Remember that Chrome DevTools makes it possible to test service workers on localhost in development. Simply click the Application tab, then select Service Workers from the menu on the left.
+
+### Programming Languages and Technologies Used:
+- NoSQL
+- MongoDB
+- Mongoose
+- Node.js
+- ES6
+- Javascript
+
+### NPM Packages:
+- Express.js
+- Mongoose
+
+## Table of Contents:
+- [Instructions for Installation](#instructions-for-installation)
+- [Usage](#usage)
+- [Contributions](#contribution-guidelines)
+- [Questions?](#questions?)
 
 
-Once you’ve updated the existing budget tracker, it should provide the following functionality:
+## <a name="instructions-for-installation">Instructions for Installation</a>:
+1. Clone constellation repository,
+1. Install Node.js ('npm init --y'),
+1. From the terminal, run 'npm start' to instantiate the server and trigger creation of the database,
+1. From the terminal, run 'npm start'.
+1. Navigate to Insomnia (or another API testing tool).
 
-The ability to enter deposits offline.
 
-The ability to enter expenses offline.
+## <a name="usage">Usage</a>:
+### Walkthrough video A:</br> adding new users & managing friends
+[![Application Screenshot](./assets/walkthrough-screenshotA.jpg)*Click the image-link to access video walkthrough part A:*](https://drive.google.com/file/d/1rRi1LmMHBo0__CkeuNh0ytGI1Bi1NUom/view?usp=sharing)
 
-Offline entries should be added to the tracker when the application is brought back online.
 
-review Module 19: Progressive Web Applications (PWA), Lesson 5: Convert the App to a PWA as a refresher on web manifests.
 
-Deployment to Heroku Using MongoDB Atlas
-Finally, the budget tracker has a server and uses MongoDB as its database, so you’ll need to deploy this application to Heroku using MongoDB Atlas. To review this process, look at Module 18: NoSQL, Lesson 5: Add Mongoose Validation, specifically 18.5.5: Deploy to Heroku.
+### Walkthrough video B:</br> managing thoughts & reactions
+[![Application Screenshot](./assets/walkthrough-screenshotB.jpg)Click the image-link to access a video walkthrough part B:*](https://drive.google.com/file/d/11WEddk-BmuYqy4PaKWAfj-RNT5s7r7eB/view?usp=sharing)
+
+
+    
+## <a name="contribution-guidelines">Contributions</a>:
+Made with ☕+❤️ by Sara Krizan and in consultation with several LAs, TA, and learning instructor through the University of Wisconsin Extended Campus Coding Bootcamp.
+
+Please feel free to contact me via my GitHub account below with any requests to contribute to this project or collaborate on future works.
+    
+
+## <a name="questions?">Questions?</a> 
+Sara Krizan    
+[GitHub](https://github.com/SMKrizan)
+    
