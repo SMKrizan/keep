@@ -1,7 +1,7 @@
 {
-  "name": "budget-app",
+  "name": "keep-budget-app",
   "version": "1.0.0",
-  "description": "User Story\r AS AN avid traveler\r I WANT to be able to track my withdrawals and deposits with or without a data/internet connection\r SO THAT my account balance is accurate when I am traveling",
+  "description": "A simple budget-tracker and Progressive Web App (PWA).",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -18,7 +18,15 @@ app.use(express.static("public"));
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useCreateIndex: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true
+})
+.then(() => {
+  console.log('Database connected successfully!');
+})
+.catch((err) => {
+  console.log('Error connecting with code:', err);
 });
 
 // routes

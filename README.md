@@ -1,47 +1,27 @@
-# "keep" budget tracker
-
-# Constellation: a Social Network API
-
+# "Keep" a budget tracker
 
 ## Description
-This application is the API for a social network web application. Users can add and remove friends, add and remove thoughts and add and remove reactions to others' posts.
+A simple budget-tracker and Progressive Web App (PWA) that uses IndexedDB to facilitate a consistent user-experience even with spotty internet reception.
 
 
 ### Programming Languages and Technologies Used:
-- NoSQL
-- MongoDB
-- Mongoose
 - Node.js
 - ES6
 - Javascript
+- MongoDB Atlas
 
 ### NPM Packages:
 - Express.js
 - Mongoose
 
 ## Table of Contents:
-- [Instructions for Installation](#instructions-for-installation)
 - [Usage](#usage)
 - [Contributions](#contribution-guidelines)
 - [Questions?](#questions?)
 
 
-## <a name="instructions-for-installation">Instructions for Installation</a>:
-1. Clone constellation repository,
-1. Install Node.js ('npm init --y'),
-1. From the terminal, run 'npm start' to instantiate the server and trigger creation of the database,
-1. From the terminal, run 'npm start'.
-1. Navigate to Insomnia (or another API testing tool).
-
-
 ## <a name="usage">Usage</a>:
-### Walkthrough video A:</br> adding new users & managing friends
-[![Application Screenshot](./assets/walkthrough-screenshotA.jpg)*Click the image-link to access video walkthrough part A:*](https://drive.google.com/file/d/1rRi1LmMHBo0__CkeuNh0ytGI1Bi1NUom/view?usp=sharing)
-
-
-
-### Walkthrough video B:</br> managing thoughts & reactions
-[![Application Screenshot](./assets/walkthrough-screenshotB.jpg)Click the image-link to access a video walkthrough part B:*](https://drive.google.com/file/d/11WEddk-BmuYqy4PaKWAfj-RNT5s7r7eB/view?usp=sharing)
+https://keep-budget-app.herokuapp.com/
 
 
     
