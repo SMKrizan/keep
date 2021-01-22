@@ -56,7 +56,6 @@
       navigator.serviceWorker.register("./service-worker.js")
       .then(() => console.log("Service worker registered successfully."))
       .catch(error => console.log("Service Worker registration failed:", error));
-      console.log('ServiceWorker registration successful with scope: ', ServiceWorkerRegistration.scope);
     }
   // this is an 'immediately invoke function expression' (IIFE); the empty set of parentheses following the expression let js know to execute the function as soon as it is defined; because of that, this function is not part of the global space. 
   })();
