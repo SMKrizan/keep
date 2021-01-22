@@ -10,18 +10,27 @@ A simple budget-tracker and Progressive Web App (PWA) that uses IndexedDB to fac
 - Javascript
 - MongoDB Atlas
 
+
 ### NPM Packages:
 - Express.js
 - Mongoose
 
+
 ## Table of Contents:
 - [Usage](#usage)
+- [Repository](#repo)
 - [Contributions](#contribution-guidelines)
 - [Questions?](#questions?)
 
 
+
 ## <a name="usage">Usage</a>:
 https://keep-budget-app.herokuapp.com/
+
+
+
+## <a name="repo">GitHub Repository</a>:
+https://github.com/SMKrizan/keep
 
 
     
@@ -30,6 +39,7 @@ Made with ☕+❤️ by Sara Krizan and in consultation with several LAs, TA, an
 
 Please feel free to contact me via my GitHub account below with any requests to contribute to this project or collaborate on future works.
     
+
 
 ## <a name="questions?">Questions?</a> 
 Sara Krizan    

@@ -1,4 +1,5 @@
-const APP_PREFIX = "Keep-",
+// is the fact that I had a ',' instead of a ';' the reason for the lingering error?
+const APP_PREFIX = "Keep-";
 const VERSION = 'v1';
 const CACHE_NAME = APP_PREFIX + VERSION;
 const DATA_CACHE_NAME = "Keep-data-" + VERSION;
